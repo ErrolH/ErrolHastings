@@ -1,0 +1,54 @@
+
+nav {
+    background-color:rgb(40, 56, 51);
+    max-width: 70em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 5em;
+    margin: auto;
+}
+
+nav div {
+    background-color: beige;
+    width: 10em;
+    margin: auto;
+    height: 3em;
+    line-height: 3em;
+    
+}
+
+nav div:hover {
+    background-color: rgb(246, 255, 220);
+    text-shadow: 0px 0px 1px  rgb(0, 0, 0);
+}
+
+nav div a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: rgb(35, 73, 51);
+
+}
+
+section div {
+    margin: auto;
+    background-color: rgb(66, 49, 78);
+    color:rgb(231, 169, 255);
+    padding: 3px;
+    height: 6em;
+    width: 12em;
+    margin-top: 5em;
+    text-align: center;
+    line-height: 6em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+section {
+    margin: auto;
+    max-width: 70em;
+    height: 70em;
+    background-color: aliceblue;
+    overflow: auto;
+}
