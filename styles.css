@@ -5,6 +5,10 @@
     to {color: rgb(0, 196, 147);}
   }
 
+  *::selection {
+    background-color: rgb(30, 211, 150);
+    color: white;
+  }
 
 header {
     background-color: aliceblue;
@@ -36,7 +40,6 @@ body {
     background-color: #001f1e;
     margin: 0 auto;
     box-sizing: border-box;
-    color: white;
 }
 
 header div img {
