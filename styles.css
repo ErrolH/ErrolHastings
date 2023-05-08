@@ -1,34 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
+@keyframes navBar {
+    from {color: #ceeded;}
+    to {color: rgb(0, 196, 147);}
+  }
+
+
+header {
+    background-color: aliceblue;
+    margin: 0 auto;
+    height: 4em;
+    box-sizing: border-box;
+    background-color: #ceeded;
+    border-top: solid #e7fcfc 1px;
+    
+}
+
+.menuWrapper {
+    height: 4em;
+    background-image: linear-gradient(#006663, #00524F);
+    border-top: solid #8aa0a0 1px;
+    border-bottom: solid #002524 1px;
+    position: sticky;
+    top: 0px;
+}
+
+.headerContent {
+    display: flex;
+    max-width: 70em;
+    background-color: #ceeded;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+body {
+    background-color: #001f1e;
+    margin: 0 auto;
+    box-sizing: border-box;
+    color: white;
+}
+
+header div img {
+    margin-top: 10px;
+    height: 50px;
+    width: 300px;
+}
+
+.headerText {
+    margin-right: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.headerText p {
+    line-height: 60px;
+    margin-block-start: 0.3em;
+    margin-block-end: 0em;
+    /* margin-inline-end: 1em; */
+    /* font-family:Arial, Helvetica, sans-serif; */
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+}
 nav {
-    background-color:rgb(40, 56, 51);
     max-width: 70em;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
-    height: 5em;
+    height: 4em;
     margin: auto;
 }
 
 nav div {
-    background-color: beige;
     width: 10em;
-    margin: auto;
-    height: 3em;
-    line-height: 3em;
+    line-height: 4em;
     
 }
 
-nav div:hover {
-    background-color: rgb(246, 255, 220);
-    text-shadow: 0px 0px 1px  rgb(0, 0, 0);
+nav div:hover > a {
+    /* background-color: rgb(3, 97, 77);
+    background-image: linear-gradient(#017e7a, #016864); */
+    animation-name: navBar;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
 }
 
 nav div a {
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2em;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.3em;
     font-weight: bold;
-    color: rgb(35, 73, 51);
+    color: #ceeded;
 
 }
 
