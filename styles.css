@@ -211,7 +211,7 @@ body .mobileNav {
 
 body .mobileNav div {
     background-color:#0d5a57;
-    width: 100vw;
+    width: calc(100vw - (100vw - 100%));;
 }
 
 body .mobileNav div:first-of-type {
