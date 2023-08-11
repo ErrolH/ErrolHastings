@@ -20,6 +20,45 @@
     .menuWrapper .nav1 {
         display: none;
     }
+    
+    .timerWrapper {
+        margin: auto;
+        height: 200px;
+        width: 500px;
+        position: sticky;
+        margin-top: 2em;
+    }
+    
+    .timerLogo {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight:bold;
+        text-align: center;
+        padding-top: 30px;
+        font-size: 2em;
+        color:#ceeded;
+        text-shadow: 2px 2px 2px black; 
+    }
+    
+    .timerText {
+        margin:auto;
+        
+    }
+    
+    .clockWrapper {
+        text-align: center;
+        display: flex;
+    }
+    
+    .clockWrapper div {
+        margin: auto;
+        line-height: 4em;
+        color: #ceeded;
+        padding: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight:bolder;
+        text-shadow: 0px 4px 4px black;
+        font-size: 1em;
+    }
   }
 
   @media only screen and (max-width: 300px) {
@@ -44,6 +83,46 @@
     .mobileNav {
         display: none;
     }
+
+    .timerWrapper {
+        margin: auto;
+        height: 500px;
+        width: 800px;
+        position: sticky;
+        margin-top: 2em;
+    }
+    
+    .timerLogo {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight:bold;
+        text-align: center;
+        padding-top: 30px;
+        font-size: 3em;
+        color:#ceeded;
+        text-shadow: 2px 2px 2px black; 
+    }
+    
+    .timerText {
+        margin:auto;
+        
+    }
+    
+    .clockWrapper {
+        text-align: center;
+        display: flex;
+    }
+    
+    .clockWrapper div {
+        margin: auto;
+        line-height: 4em;
+        color: #ceeded;
+        padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight:bolder;
+        text-shadow: 0px 4px 4px black;
+        font-size: 2em;
+    }
+    
   }
 
   .nav2 {
@@ -218,41 +297,3 @@ body .mobileNav div:first-of-type {
     background-image: linear-gradient(#0d4e4c, #0d5a57);
 }
 
-.timerWrapper {
-    margin: auto;
-    height: 500px;
-    width: 800px;
-    position: sticky;
-    margin-top: 2em;
-}
-
-.timerLogo {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight:bold;
-    text-align: center;
-    padding-top: 30px;
-    font-size: 3em;
-    color:#ceeded;
-    text-shadow: 2px 2px 2px black; 
-}
-
-.timerText {
-    margin:auto;
-    
-}
-
-.clockWrapper {
-    text-align: center;
-    display: flex;
-}
-
-.clockWrapper div {
-    margin: auto;
-    line-height: 4em;
-    color: #ceeded;
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight:bolder;
-    font-size: 2em;
-    text-shadow: 0px 4px 4px black;
-}

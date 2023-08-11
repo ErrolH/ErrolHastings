@@ -41,11 +41,6 @@ function countDown() {
     timeObject.minutes = (difference / 1000) / 60;
     timeObject.seconds = (difference / 1000);
     
-    console.log(Math.ceil(timeObject.days));
-    console.log(Math.floor(timeObject.hours % 24));
-    console.log(Math.floor(timeObject.minutes % 60));
-
-
     clockSeconds.innerText = `${Math.floor(timeObject.seconds % 60)} seconds`;
     clockMinutes.innerText = `${Math.floor(timeObject.minutes % 60)} minutes`;
     clockHours.innerText = `${Math.floor(timeObject.hours % 24)} hours`;
