@@ -14,17 +14,10 @@
     .headerText {
         display: none;
     }
-  }
 
-  @media only screen and (max-width: 1136px) {
-    .menuWrapper .nav1 {
-        display: none;
-    }
-    
     .timerWrapper {
         margin: auto;
-        height: 200px;
-        width: 500px;
+        height: 100px;
         position: sticky;
         margin-top: 2em;
     }
@@ -34,7 +27,7 @@
         font-weight:bold;
         text-align: center;
         padding-top: 30px;
-        font-size: 2em;
+        font-size: 6vw;
         color:#ceeded;
         text-shadow: 2px 2px 2px black; 
     }
@@ -45,19 +38,63 @@
     }
     
     .clockWrapper {
+        justify-content: center;
         text-align: center;
         display: flex;
     }
     
     .clockWrapper div {
-        margin: auto;
-        line-height: 4em;
+        
+        line-height: 2em;
         color: #ceeded;
-        padding: 5px;
+        padding: 0.5vw;
         font-family: Arial, Helvetica, sans-serif;
         font-weight:bolder;
         text-shadow: 0px 4px 4px black;
-        font-size: 1em;
+        font-size: 5vw;
+    }
+  }
+
+  @media only screen and (max-width: 1136px) {
+    .menuWrapper .nav1 {
+        display: none;
+    }
+    
+    .timerWrapper {
+        margin: auto;
+        position: sticky;
+        margin-top: 2em;
+    }
+    
+    .timerLogo {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight:bold;
+        text-align: center;
+        padding-top: 30px;
+        font-size: 6vw;
+        color:#ceeded;
+        text-shadow: 2px 2px 2px black; 
+    }
+    
+    .timerText {
+        margin:auto;
+        
+    }
+    
+    .clockWrapper {
+        justify-content: center;
+        text-align: center;
+        display: flex;
+    }
+    
+    .clockWrapper div {
+        line-height: 2em;
+        color: #ceeded;
+        padding: 0.5vw;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight:bolder;
+        text-shadow: 0px 4px 4px black;
+        font-size: 5vw;
     }
   }
 
@@ -87,7 +124,6 @@
     .timerWrapper {
         margin: auto;
         height: 500px;
-        width: 800px;
         position: sticky;
         margin-top: 2em;
     }
@@ -97,7 +133,7 @@
         font-weight:bold;
         text-align: center;
         padding-top: 30px;
-        font-size: 3em;
+        font-size: 6vw;
         color:#ceeded;
         text-shadow: 2px 2px 2px black; 
     }
@@ -108,19 +144,19 @@
     }
     
     .clockWrapper {
+        justify-content: center;
         text-align: center;
         display: flex;
     }
     
     .clockWrapper div {
-        margin: auto;
-        line-height: 4em;
+        line-height: 2em;
         color: #ceeded;
-        padding: 10px;
+        padding: 0.5vw;
         font-family: Arial, Helvetica, sans-serif;
         font-weight:bolder;
         text-shadow: 0px 4px 4px black;
-        font-size: 2em;
+        font-size: 5vw;
     }
     
   }
