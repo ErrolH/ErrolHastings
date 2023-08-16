@@ -60,6 +60,11 @@ function displayTimeObject(timeObject, domTimeObject) {
         domTimeObject.clockMinutes.innerText = `currently`;
         domTimeObject.clockHours.innerText = `date`;
         domTimeObject.clockDays.innerText = `No`;  
+    } else if(timeObject.seconds < 0) {
+        domTimeObject.clockSeconds.innerText = `past.`;
+        domTimeObject.clockMinutes.innerText = `already`;
+        domTimeObject.clockHours.innerText = `has`;
+        domTimeObject.clockDays.innerText = `Date`; 
     } else {
     domTimeObject.clockSeconds.innerText = `${Math.floor(timeObject.seconds % 60)} seconds`;
     domTimeObject.clockMinutes.innerText = `${Math.floor(timeObject.minutes % 60)} minutes`;
