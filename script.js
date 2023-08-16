@@ -30,7 +30,7 @@ let clockHours = document.querySelector("div.hours");
 let clockMinutes = document.querySelector("div.minutes");
 let clockSeconds = document.querySelector("div.seconds");
 let firstClock = createDomTimeObject(clockDays, clockHours, clockMinutes, clockSeconds);
-let pickDate = '2023-09-06';
+let pickDate = '2023-09-06T00:00';
 
 let clockDays2 = document.querySelector("div.days2");
 let clockHours2 = document.querySelector("div.hours2");
@@ -84,4 +84,5 @@ const input = document.querySelector("input");
 
 input.addEventListener("input", (e) => {
     newValue = input.value;
-})
+    console.log(newValue);
+});
