@@ -12,9 +12,9 @@
   <body class="body">
     <header>
       <div class="headerContent">
-        <a href="index.html"><img src="images/logo.jpg" /></a>
+        <img src="images/logo.jpg" />
         <div class="headerText">
-          <p>Chief Artisan Baker</p>
+          <p>Exercises</p>
         </div>
       </div>
     </header>
@@ -50,16 +50,35 @@
       <div><a href="#">Contact</a></div>
     </nav>
 
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />test
+    <br />
+    <br />
+    <br />
+
+    <div class="converterWrapper">
+      <h1>Unit Converter:</h1>
+      <form id="convertForm">
+        <h2>From:</h2>
+        <input type="radio" id="html" name="from" value="grams" checked />
+        <label for="grams">grams</label><br />
+        <input type="radio" id="html" name="from" value="kilograms" />
+        <label for="kilograms">kilograms</label><br />
+        <input type="radio" id="html" name="from" value="tonnes" />
+        <label for="tonnes">tonnes</label><br />
+
+        <h2>To:</h2>
+
+        <input type="radio" id="html" name="to" value="grams" checked />
+        <label for="grams">grams</label><br />
+        <input type="radio" id="html" name="to" value="kilograms" />
+        <label for="kilograms">kilograms</label><br />
+        <input type="radio" id="html" name="to" value="tonnes" />
+        <label for="tonnes">tonnes</label><br />
+        <label for="quantity">Enter Value:</label>
+        <input type="number" id="quantity" name="quantity" />
+        <input type="submit" value="Submit" />
+      </form>
+
+      <p id="result"></p>
+    </div>
   </body>
 </html>

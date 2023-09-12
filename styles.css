@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
+.body {
+    color:#ceeded;
+}
 @keyframes navBar {
     from {color: #ceeded;}
     to {color: rgb(0, 196, 147);}
@@ -190,6 +193,35 @@
     }
     
   }
+
+  .converterWrapper {
+    margin: auto;
+    text-align: center;
+    padding-left: 5vw;
+  }
+
+  .converterWrapper > form {
+    text-align: left;
+    display: inline-block;
+  }
+
+  .converterWrapper h1, h2, label, input, p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+
+  }
+
+  .converterWrapper input{
+    background-color: #ceeded;
+    color: #001f1e;
+  }
+
+  .converterWrapper input[type=radio] {
+    border: 0px;
+    width: 1vw;
+    height: 1vw;
+}
 
   .nav2 {
     display: inline-block;
