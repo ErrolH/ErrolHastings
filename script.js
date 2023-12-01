@@ -31,7 +31,7 @@ if (window.location.pathname == "/countdown.html") {
     let clockMinutes = document.querySelector("div.minutes");
     let clockSeconds = document.querySelector("div.seconds");
     let firstClock = createDomTimeObject(clockDays, clockHours, clockMinutes, clockSeconds);
-    let pickDate = '2023-09-06'; //T00:00
+    let pickDate = '2023-12-05T14:00'; //T00:00
 
     let clockDays2 = document.querySelector("div.days2");
     let clockHours2 = document.querySelector("div.hours2");
