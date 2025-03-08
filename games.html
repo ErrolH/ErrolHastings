@@ -14,7 +14,7 @@
       <div class="headerContent">
         <a href="index.html"><img src="images/logo.jpg" /></a>
         <!-- <div class="headerText">
-          <p>Countdown</p>
+          <p>Chief Artisan Baker</p>
         </div> -->
       </div>
     </header>
@@ -50,29 +50,41 @@
       <div><a href="#">Contact</a></div>
     </nav>
 
-    <div class="timerWrapper">
-      <div class="timerLogo">Countdown to 2026.</div>
-      <div class="timerText">
-        <div class="clockWrapper">
-          <div class="days"></div>
-          <div class="hours"></div>
-          <div class="minutes"></div>
-          <div class="seconds"></div>
+    <h1 class="subHeader">Tic-tac-toe</h1>
+    <div class="boardWrapper">
+      <div class="board">
+        <div class="boardRow">
+          <div class="boardCell" data-cell="1"></div>
+          <div class="boardCell" data-cell="4"></div>
+          <div class="boardCell" data-cell="7"></div>
+        </div>
+        <div class="boardRow">
+          <div class="boardCell" data-cell="2"></div>
+          <div class="boardCell" data-cell="5"></div>
+          <div class="boardCell" data-cell="8"></div>
+        </div>
+        <div class="boardRow">
+          <div class="boardCell" data-cell="3"></div>
+          <div class="boardCell" data-cell="6"></div>
+          <div class="boardCell" data-cell="9"></div>
         </div>
       </div>
-    </div>
-    <div class="timerWrapper">
-      <div class="timerLogo2">Select a date</div>
 
-      <input type="datetime-local" id="start" name="trip-start" />
-      <div class="timerText">
-        <div class="clockWrapper">
-          <div class="days2"></div>
-          <div class="hours2"></div>
-          <div class="minutes2"></div>
-          <div class="seconds2"></div>
-        </div>
-      </div>
+      
+
     </div>
+    <div class="winText"></div>
+
+    <div class="interfaceWrapper">
+      <form id="interface">
+
+        <label for="P1Name">Name: </label>
+        <input type="text" id="P1Name" name="from" value="Player 1" /><br />
+        <label for="P2Name">Name: </label>
+        <input type="text" id="P2Name" name="from" value="Player 2" /> <br />
+        <input type="button" id="submit" name="from" value="Submit" />
+        <input type="button" id="reset" name="from" value="Reset Game" />
+        </form>
+
   </body>
 </html>
