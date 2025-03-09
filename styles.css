@@ -489,7 +489,9 @@ body .mobileNav div:first-of-type {
     /* margin-right: 3em; */
 }
 
-
+#P1Name, #P2Name {
+    max-width: -webkit-fill-available;
+}
 
 
 .strikethrough {
