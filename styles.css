@@ -197,7 +197,7 @@
   .converterWrapper {
     margin: auto;
     text-align: center;
-    padding-left: 5vw;
+    padding-left: 10px;
   }
 
   .converterWrapper > form {
@@ -214,9 +214,9 @@
 
   .converterWrapper {
      h2, label, input, p {
-      font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       font-weight: bold;
-      font-size: 2vw;
+      font-size: 20px;
     }
   }
 
@@ -227,8 +227,12 @@
 
   .converterWrapper input[type=radio] {
     border: 0px;
-    width: 1vw;
-    height: 1vw;
+    width: 20px;
+    height: 20px;
+}
+
+p#result {
+    font-size: 28px;
 }
 
   .nav2 {
