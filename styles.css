@@ -223,7 +223,14 @@
   .converterWrapper input{
     background-color: #ceeded;
     color: #001f1e;
+    
   }
+
+  .converterWrapper input#quantity{
+    width: 150px;
+    
+  }
+
 
   .converterWrapper input[type=radio] {
     border: 0px;
