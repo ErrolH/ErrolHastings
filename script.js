@@ -214,6 +214,13 @@ function eventListener(event) {
         console.log("Game Over");
         return;
     }
+    let curCell = event.target.closest(".boardCell").dataset.cell;
+    if(!pool.hasOwnProperty(curCell)) {
+        return;
+    }
+
+
+    
 
     if (event.target.closest(".boardCell") === null) {
         return;
