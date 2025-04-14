@@ -601,3 +601,26 @@ h1 {
     color: #d5a05c;
     font-size: 3em;
 }
+
+.progBarFrame {
+    background-color: #ceeded;
+    width: 90vw;
+    height: 30px;
+    border-radius: 5px;
+    margin: auto;
+    border: 8px;
+    border-color: rgb(0, 97, 89);
+    border-style: solid;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.progBarWrapper {
+    margin: auto;
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}

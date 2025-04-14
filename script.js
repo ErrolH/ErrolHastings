@@ -67,6 +67,40 @@ if(window.location.pathname == "/Exercises.html") {
 
         displayResult(currentValue, result, currentFrom, currentTo, form);
     });
+
+    let progBarFrame = document.querySelector(".progBarFrame");
+    let startDate = new Date("2025-04-07T00:00:00");
+    let curDate = new Date()
+    let endVal = 145;
+    let curDay = checkDayProgress(startDate, curDate) * 5;
+
+    let res = (curDay/725)*100
+    
+    let progBar = document.createElement("div");
+    progBar.classList.add("progBar");
+    progBar.style.width = `${res}%`;
+    progBar.style.height = '30px';
+    progBar.style.borderRadius = '0 5px 5px 0';
+    progBar.style.backgroundColor = '#038d81';
+    progBarFrame.appendChild(progBar);
+
+    let stats = document.createElement("h2");
+    stats.innerText = `You are on day ${curDay / 5} of ${endVal}.
+    
+    You have lost ${(((curDay / 5)/7)* 1.5).toFixed(1)} pounds so far.
+    
+    Your start weight was 185 pounds, your goal weight is 154 pounds. 
+    
+    You are currently at ${185 - (((curDay / 5)/7)* 1.5).toFixed(1)} pounds.`;
+
+    progBarFrame.appendChild(stats);
+}
+
+function checkDayProgress (startDate, curDate) {
+    let startDateM = startDate.getTime();
+    let curDateM = curDate.getTime();
+    let diff = curDateM - startDateM;
+    return Math.ceil(diff / (1000 * 60 * 60 * 24));
 }
 
 function displayResult(currentValue, result, currentFrom, currentTo, form) {
