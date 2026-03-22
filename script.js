@@ -78,6 +78,10 @@ if(window.location.pathname == "/Exercises.html") {
     
     let progBar = document.createElement("div");
     progBar.classList.add("progBar");
+
+    if(res >= 100) {
+        res = 100;
+    }
     progBar.style.width = `${res}%`;
     progBar.style.height = '30px';
     progBar.style.borderRadius = '0 5px 5px 0';
