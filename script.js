@@ -69,9 +69,9 @@ if(window.location.pathname == "/Exercises.html") {
     });
 
     let progBarFrame = document.querySelector(".progBarFrame");
-    let startDate = new Date("2025-04-07T00:00:00");
+    let startDate = new Date("2025-04-20T00:00:00");
     let curDate = new Date()
-    let endVal = 145;
+    let endVal = 70;
     let curDay = checkDayProgress(startDate, curDate) * 5;
 
     let res = (curDay/725)*100
