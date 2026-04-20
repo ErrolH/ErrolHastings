@@ -69,12 +69,12 @@ if(window.location.pathname == "/Exercises.html") {
     });
 
     let progBarFrame = document.querySelector(".progBarFrame");
-    let startDate = new Date("2025-04-20T00:00:00");
+    let startDate = new Date("2026-04-20T00:00:00");
     let curDate = new Date()
     let endVal = 70;
     let curDay = checkDayProgress(startDate, curDate) * 5;
 
-    let res = (curDay/725)*100
+    let res = (curDay/350)*100
     
     let progBar = document.createElement("div");
     progBar.classList.add("progBar");
@@ -93,9 +93,9 @@ if(window.location.pathname == "/Exercises.html") {
     
     You have lost ${(((curDay / 5)/7)* 1.5).toFixed(1)} pounds so far.
     
-    Your start weight was 185 pounds, your goal weight is 154 pounds. 
+    Your start weight was 183 pounds, your goal weight is 168 pounds. 
     
-    You are currently at ${185 - (((curDay / 5)/7)* 1.5).toFixed(1)} pounds.`;
+    You are currently at ${183 - (((curDay / 5)/7)* 1.5).toFixed(1)} pounds.`;
 
     progBarFrame.appendChild(stats);
 }
